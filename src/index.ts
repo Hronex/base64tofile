@@ -1,8 +1,6 @@
-export default class Base64ToFile
-{
+export default class Base64ToFile {
 	// Возвращает расширение файла по его имени с расширением
-	public static fileExtension(fileName: string): string
-	{
+	public static fileExtension(fileName: string): string {
 		const match = fileName.match(/[^.][aA-zZ0-9]+$/i);
 
 		return !match ? '' : match[0].toLowerCase();
@@ -16,8 +14,7 @@ export default class Base64ToFile
 
 	private name: string;
 
-	constructor(base64: string, name: string)
-	{
+	constructor(base64: string, name: string) {
 		this.view = window;
 		this.saveLink = window.document.createElementNS('http://www.w3.org/1999/xhtml', 'a') as HTMLAnchorElement;
 		this.canUseSaveLink = 'download' in this.saveLink;
@@ -26,7 +23,7 @@ export default class Base64ToFile
 		const ext = Base64ToFile.fileExtension(name);
 		let type = this.extensionToMime(ext);
 
-		if ( !type ) {
+		if (!type) {
 			// console.warn('Unknown file format, use "%s"', this.forceSaveableType);
 			type = this.forceSaveableType;
 		}
@@ -35,18 +32,16 @@ export default class Base64ToFile
 		this.name = name;
 	}
 
-	private get url(): typeof URL
-	{
+	private get url(): typeof URL {
 		return this.view.URL;
 	}
 
-	public save(): void
-	{
+	public save(): void {
 		const blob = this.autoBom();
 
 		const objectUrl = this.url.createObjectURL(blob);
 
-		if ( this.canUseSaveLink ) {
+		if (this.canUseSaveLink) {
 			window.setTimeout(() => {
 				this.saveLink.href = objectUrl;
 				this.saveLink.download = this.name;
@@ -56,7 +51,7 @@ export default class Base64ToFile
 			return;
 		}
 
-		if ( FileReader ) {
+		if (FileReader) {
 			const reader = new FileReader();
 
 			reader.onloadend = () => {
@@ -74,31 +69,28 @@ export default class Base64ToFile
 
 		if (blob.type === this.forceSaveableType) {
 			this.view.location.href = objectUrl;
-		} else if ( !this.view.open(objectUrl, '_blank') ) {
+		} else if (!this.view.open(objectUrl, '_blank')) {
 			this.view.location.href = objectUrl;
 		}
 	}
 
-	private click(node: HTMLElement): void
-	{
+	private click(node: HTMLElement): void {
 		const event = new MouseEvent('click');
 		node.dispatchEvent(event);
 	}
 
-	private autoBom(): Blob
-	{
+	private autoBom(): Blob {
 		const blob = this.blob;
 
-		if ( /^\s*(?:text\/\S*|application\/xml|\S*\/\S*\+xml)\s*;.*charset\s*=\s*utf-8/i.test(blob.type) ) {
-			return new Blob([String.fromCharCode(0xFEFF), blob], { type: blob.type });
+		if (/^\s*(?:text\/\S*|application\/xml|\S*\/\S*\+xml)\s*;.*charset\s*=\s*utf-8/i.test(blob.type)) {
+			return new Blob([String.fromCharCode(0xfeff), blob], { type: blob.type });
 		}
 
 		return blob;
 	}
 
 	// Конвертация base64 строки в Blob объект
-	private base64toBlob(base64: string, contentType: string): Blob
-	{
+	private base64toBlob(base64: string, contentType: string): Blob {
 		const sliceSize = 512;
 
 		const byteCharacters = atob(base64);
@@ -121,8 +113,7 @@ export default class Base64ToFile
 	}
 
 	// Возвращает mime тип по расширению
-	private extensionToMime(extension = ''): string
-	{
+	private extensionToMime(extension = ''): string {
 		switch (extension) {
 			case 'jpeg':
 			case 'jpg':

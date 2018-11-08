@@ -1,4 +1,4 @@
-import Base64ToFile from "../index";
+import Base64ToFile from '../index';
 
 test('Base64ToFile', done => {
 	const f = new Base64ToFile('', '');
