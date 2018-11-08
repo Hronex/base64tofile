@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5baf76b4-5c45-40ff-b106-07f920c5dd01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/base64tofile.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.npmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jestconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__tests__/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -61,18 +49,18 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="4" />
-          <entry key="json" value="13" />
+          <entry key="json" value="100" />
           <entry key="npmignore" value="2" />
           <entry key="prettierrc" value="3" />
-          <entry key="ts" value="484" />
+          <entry key="ts" value="529" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Git file" value="4" />
-          <entry key="JSON" value="15" />
+          <entry key="JSON" value="102" />
           <entry key="Npm file" value="2" />
-          <entry key="TypeScript" value="484" />
+          <entry key="TypeScript" value="529" />
           <entry key="tsconfig" value="1" />
         </counts>
       </usages-collector>
@@ -97,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/tsconfig.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
-              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -105,13 +93,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="127" column="38" lean-forward="true" selection-start-line="127" selection-start-column="38" selection-end-line="127" selection-end-column="38" />
+            <state relative-caret-position="686">
+              <caret line="114" column="17" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
               <folding>
+                <element signature="n#!!block;n#fileExtension#0;n#Base64ToFile#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#Base64ToFile#0" expanded="true" />
                 <element signature="n#!!block;n#url#0;n#Base64ToFile#0" expanded="true" />
-                <element signature="n#!!block;n#extensionToMime#0;n#Base64ToFile#0" expanded="true" />
+                <element signature="n#!!block;n#save#0;n#Base64ToFile#0" expanded="true" />
                 <element signature="e#2720#2833#0" expanded="true" />
+                <element signature="e#2938#3080#0" expanded="true" />
+                <element signature="n#!!block;n#click#0;n#Base64ToFile#0" expanded="true" />
+                <element signature="n#!!block;n#autoBom#0;n#Base64ToFile#0" expanded="true" />
+                <element signature="n#!!block;n#extensionToMime#0;n#Base64ToFile#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,8 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+            <state relative-caret-position="378">
+              <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -171,7 +164,7 @@
         <entry file="file://$PROJECT_DIR$/src/__tests__/test.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
               <folding>
                 <element signature="e#71#125#0" expanded="true" />
               </folding>
@@ -201,8 +194,8 @@
         <option value="$PROJECT_DIR$/.npmignore" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/.prettierrc" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/__tests__/test.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/index.ts" />
       </list>
     </option>
@@ -270,6 +263,11 @@
             <path>
               <item name="base64tofile" type="b2602c69:ProjectViewProjectNode" />
               <item name="base64tofile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="base64tofile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="base64tofile" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="base64tofile" type="b2602c69:ProjectViewProjectNode" />
@@ -353,9 +351,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.lint" />
         <item itemvalue="npm.test" />
         <item itemvalue="npm.format" />
-        <item itemvalue="npm.lint" />
         <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
@@ -370,12 +368,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541667859232</updated>
-      <workItem from="1541667860617" duration="4888000" />
+      <workItem from="1541667860617" duration="5367000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4888000" />
+    <option name="totallyTimeSpent" value="5367000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="290" y="23" width="1917" height="1343" extended-state="0" />
@@ -422,13 +420,6 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tslint.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jestconfig.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -450,17 +441,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/__tests__/test.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
           <folding>
             <element signature="e#71#125#0" expanded="true" />
           </folding>
@@ -470,19 +454,38 @@
     <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tslint.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="127" column="38" lean-forward="true" selection-start-line="127" selection-start-column="38" selection-end-line="127" selection-end-column="38" />
+        <state relative-caret-position="686">
+          <caret line="114" column="17" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
           <folding>
+            <element signature="n#!!block;n#fileExtension#0;n#Base64ToFile#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#Base64ToFile#0" expanded="true" />
             <element signature="n#!!block;n#url#0;n#Base64ToFile#0" expanded="true" />
-            <element signature="n#!!block;n#extensionToMime#0;n#Base64ToFile#0" expanded="true" />
+            <element signature="n#!!block;n#save#0;n#Base64ToFile#0" expanded="true" />
             <element signature="e#2720#2833#0" expanded="true" />
+            <element signature="e#2938#3080#0" expanded="true" />
+            <element signature="n#!!block;n#click#0;n#Base64ToFile#0" expanded="true" />
+            <element signature="n#!!block;n#autoBom#0;n#Base64ToFile#0" expanded="true" />
+            <element signature="n#!!block;n#extensionToMime#0;n#Base64ToFile#0" expanded="true" />
           </folding>
         </state>
       </provider>
