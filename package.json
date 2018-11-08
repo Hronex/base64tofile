@@ -13,13 +13,15 @@
     "prepublishOnly" : "npm test && npm run lint",
     "preversion" : "npm run lint",
     "version" : "npm run format && git add -A src",
-    "postversion" : "git push && git push --tags"
+    "postversion" : "git push && git push --tags",
+    "incrementVersion": "npm version patch",
+    "publish": "npm publish"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Hronex/base64tofile.git"
   },
-  "keywords": ["base64", "base64tofile", "base64 converter"],
+  "keywords": ["base64", "base64 to file converter"],
   "author": "Hronex",
   "license": "ISC",
   "bugs": {
@@ -28,7 +30,6 @@
   "homepage": "https://github.com/Hronex/base64tofile#readme",
   "devDependencies": {
     "@types/jest": "^23.3.9",
-    "@types/node": "^10.12.3",
     "jest": "^23.6.0",
     "prettier": "^1.15.1",
     "ts-jest": "^23.10.4",
