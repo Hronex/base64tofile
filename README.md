@@ -1,15 +1,19 @@
 # Base64 To File
 
 [![npm version][npm-image]][npm-url]
-[![AUR license][license-image]][license-url]
-[![Downloads][downloads-image]][downloads-url]
+[![license][license-image]][license-url]
+[![downloads][downloads-image]][downloads-url]
 
-##### Description
+#### Description
 
 Extension converts Base64 string to file on local system.
 
-##### Example
+#### Installation
+```npm
+npm install dvs-base64tofile --save
+```
 
+#### Usage
 
 ```js
 import Base64ToFile from "dvs-base64tofile";
