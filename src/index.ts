@@ -1,5 +1,5 @@
 export default class Base64ToFile {
-	// Возвращает расширение файла по его имени с расширением
+	// Returns file extension by file name
 	public static fileExtension(fileName: string): string {
 		const match = fileName.match(/[^.][aA-zZ0-9]+$/i);
 
@@ -21,25 +21,15 @@ export default class Base64ToFile {
 		this.forceSaveableType = this.extensionToMime();
 
 		const ext = Base64ToFile.fileExtension(name);
-		let type = this.extensionToMime(ext);
-
-		if (!type) {
-			// console.warn('Unknown file format, use "%s"', this.forceSaveableType);
-			type = this.forceSaveableType;
-		}
+		const type = this.extensionToMime(ext) || this.forceSaveableType;
 
 		this.blob = this.base64toBlob(base64, type);
 		this.name = name;
 	}
 
-	private get url(): typeof URL {
-		return this.view.URL;
-	}
-
 	public save(): void {
 		const blob = this.autoBom();
-
-		const objectUrl = this.url.createObjectURL(blob);
+		const objectUrl = this.view.URL.createObjectURL(blob);
 
 		if (this.canUseSaveLink) {
 			window.setTimeout(() => {
@@ -75,8 +65,7 @@ export default class Base64ToFile {
 	}
 
 	private click(node: HTMLElement): void {
-		const event = new MouseEvent('click');
-		node.dispatchEvent(event);
+		node.dispatchEvent(new MouseEvent('click'));
 	}
 
 	private autoBom(): Blob {
@@ -89,10 +78,9 @@ export default class Base64ToFile {
 		return blob;
 	}
 
-	// Конвертация base64 строки в Blob объект
+	// Converts base64 string to Blob object
 	private base64toBlob(base64: string, contentType: string): Blob {
 		const sliceSize = 512;
-
 		const byteCharacters = atob(base64);
 		const byteArrays = [];
 
@@ -112,7 +100,7 @@ export default class Base64ToFile {
 		return new Blob(byteArrays, { type: contentType });
 	}
 
-	// Возвращает mime тип по расширению
+	// Returns mime type by extension
 	private extensionToMime(extension = ''): string {
 		switch (extension) {
 			case 'jpeg':
@@ -130,7 +118,7 @@ export default class Base64ToFile {
 			case 'pdf':
 				return 'application/pdf';
 			default:
-				return '';
+				return 'application/octet-stream';
 		}
 	}
 }
