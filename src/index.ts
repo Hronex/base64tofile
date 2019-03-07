@@ -67,7 +67,7 @@ export default class Base64ToFile {
 	private click(node: HTMLElement): void {
 		let event;
 
-		if ( typeof(Event) === 'function' ) {
+		if (typeof Event === 'function') {
 			event = new MouseEvent('click');
 		} else {
 			event = document.createEvent('Event');
