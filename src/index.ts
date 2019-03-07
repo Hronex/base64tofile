@@ -65,7 +65,16 @@ export default class Base64ToFile {
 	}
 
 	private click(node: HTMLElement): void {
-		node.dispatchEvent(new MouseEvent('click'));
+		let event;
+
+		if ( typeof(Event) === 'function' ) {
+			event = new MouseEvent('click');
+		} else {
+			event = document.createEvent('Event');
+			event.initEvent('click', true, true);
+		}
+
+		node.dispatchEvent(event);
 	}
 
 	private autoBom(): Blob {
