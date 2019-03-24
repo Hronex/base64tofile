@@ -1,7 +1,7 @@
 export default class Base64ToFile {
 	// Returns file extension by file name
 	public static fileExtension(fileName: string): string {
-		const match = fileName.match(/[^.][aA-zZ0-9]+$/i);
+		const match = fileName.match(/[^.][a-z\d]+$/i);
 
 		return !match ? '' : match[0].toLowerCase();
 	}
