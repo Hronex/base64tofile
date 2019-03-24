@@ -32,10 +32,10 @@
   },
   "homepage": "https://github.com/Hronex/base64tofile#readme",
   "devDependencies": {
-    "@types/jest": "^23.3.9",
-    "jest": "^23.6.0",
+    "@types/jest": "^24.0.11",
+    "jest": "^24.5.0",
     "prettier": "^1.15.1",
-    "ts-jest": "^23.10.4",
+    "ts-jest": "^24.0.0",
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
     "typescript": "^3.1.6"
