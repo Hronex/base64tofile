@@ -1,5 +1,8 @@
 export default class Base64ToFile {
-	// Returns file extension by file name
+	/**
+	 * Extract file extension from file name
+	 * @param fileName
+	 */
 	public static fileExtension(fileName: string): string {
 		const match = fileName.match(/[^.][a-z\d]+$/i);
 
@@ -7,12 +10,11 @@ export default class Base64ToFile {
 	}
 
 	private view: typeof window;
-	private saveLink: HTMLAnchorElement;
-	private canUseSaveLink: boolean;
-	private forceSaveableType: string;
-	private blob: Blob;
-
-	private name: string;
+	private readonly saveLink: HTMLAnchorElement;
+	private readonly canUseSaveLink: boolean;
+	private readonly forceSaveableType: string;
+	private readonly blob: Blob;
+	private readonly name: string;
 
 	constructor(base64: string, name: string) {
 		this.view = window;
@@ -112,6 +114,10 @@ export default class Base64ToFile {
 	// Returns mime type by extension
 	private extensionToMime(extension = ''): string {
 		switch (extension) {
+			case 'svg':
+				return 'image/svg+xml';
+			case 'tiff':
+				return 'image/tiff';
 			case 'jpeg':
 			case 'jpg':
 				return 'image/jpeg';
@@ -119,6 +125,10 @@ export default class Base64ToFile {
 				return 'image/png';
 			case 'gif':
 				return 'image/gif';
+			case 'csv':
+				return 'text/csv';
+			case 'xml':
+				return 'text/xml';
 			case 'log':
 			case 'txt':
 				return 'text/plain';
