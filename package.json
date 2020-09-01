@@ -20,7 +20,7 @@
   "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hronex/base64tofile.git"
+    "url": "git://github.com/Hronex/base64tofile.git"
   },
   "keywords": [
     "base64",
