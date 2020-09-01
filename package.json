@@ -17,6 +17,7 @@
     "incrementVersion": "npm version patch --force",
     "publish": "npm publish"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Hronex/base64tofile.git"
