@@ -29,8 +29,8 @@ new Base64ToFile(base64image, "image/png").save();
 [npm-url]: https://npmjs.org/package/dvs-base64tofile
 [license-image]: https://img.shields.io/npm/l/dvs-base64tofile.svg?style=flat-square
 [license-url]: https://npmjs.org/package/dvs-base64tofile
-[github-language-image]: https://img.shields.io/github/languages/top/Hronex/base64tofile
-[github-issues-image]: https://img.shields.io/github/issues/Hronex/base64tofile
+[github-language-image]: https://img.shields.io/github/languages/top/Hronex/base64tofile?style=flat-square
+[github-issues-image]: https://img.shields.io/github/issues/Hronex/base64tofile?style=flat-square
 [github-url]: https://github.com/Hronex/base64tofile
 [downloads-image]: http://img.shields.io/npm/dm/dvs-base64tofile.svg?style=flat-square
 [downloads-url]: https://npmjs.org/package/dvs-base64tofile
