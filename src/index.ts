@@ -18,7 +18,7 @@ export default class Base64ToFile {
 
 	constructor(base64: string, name: string) {
 		this.view = window;
-		this.saveLink = window.document.createElementNS('http://www.w3.org/1999/xhtml', 'a') as HTMLAnchorElement;
+		this.saveLink = window.document.createElementNS('https://www.w3.org/1999/xhtml', 'a') as HTMLAnchorElement;
 		this.canUseSaveLink = 'download' in this.saveLink;
 		this.forceSaveableType = this.extensionToMime();
 
